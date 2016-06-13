@@ -3,21 +3,17 @@ PhantomJS integration module for Python
 
 ## Easy to use:
 ```python
-from phantomjs.driver import Driver
 from phantomjs.phantom import Phantom
+from phantomjs.driver import Driver
 
 driver = Driver(engine='phantomjs', port=3000)
 driver.start()
 driver.wait_for_ready()
-phantom = Phantom(driver)
-page = phantom.create_web_page()
-page.open('http://phantomjs.org/')
-title_1 = page.get_property('title')
-title_2 = page.evaluateJavaScript('function(){return document.title;}')
-print(title_1 == title_2)
-page.close()
+phantom = Phantom(driver=driver)
+page = phantom.create_page()
+status = page.open('http://phantomjs.org/')
+print(status)
 driver.kill()
-
 ```
 
 ## `Phantom`:

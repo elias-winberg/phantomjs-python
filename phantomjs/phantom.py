@@ -37,14 +37,14 @@ class Phantom(object):
             'args': args
         })
 
-    def create_web_page(self):
+    def create_page(self):
         """
         Create a new Page.
         :return: the Page
         """
         data = self.execute('createWebPage')
-        web_page = Page(self.driver, data['uid'])
-        return web_page
+        page = Page(self.driver, data['uid'])
+        return page
 
     def get_property(self, field):
         """
