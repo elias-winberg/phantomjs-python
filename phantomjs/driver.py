@@ -12,7 +12,7 @@ class Driver(object):
     def __init__(self, engine, port):
         """
         Initialises the instance.
-        :param engine: the PhantomJS binary
+        :param engine: the PhantomJS executable
         :param port: the port to listen on
         """
         self.engine = engine

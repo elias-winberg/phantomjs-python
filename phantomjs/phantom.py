@@ -15,7 +15,7 @@ class Phantom(object):
     def __init__(self, driver):
         """
         Initialises the instance.
-        :param driver: the the Driver the Page belongs to
+        :param driver: the Driver/parent
         """
         self.driver = driver
         self.on_event = signal('event')
