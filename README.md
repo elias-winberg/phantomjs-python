@@ -99,3 +99,6 @@ javascriptEnabled = page.get_setting('javascriptEnabled')
   ```python
 javascriptEnabled = page.set_setting('javascriptEnabled', False)
   ```
+
+
+Feel free to contribute!
