@@ -41,6 +41,8 @@ class Page(object):
     def __init__(self, driver, uid):
         """
         Initialises the instance.
+        :param driver: the Driver the Page belongs to
+        :param uid: the Page's unique identifier
         """
         self.driver = driver
         self.uid = uid
