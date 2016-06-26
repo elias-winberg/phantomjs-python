@@ -16,6 +16,14 @@ print(status)
 driver.kill()
 ```
 
+## Tests:
+To run the tests, first install the dependencies, then run `py.test`.
+
+```bash
+$ pip install -r dev_requirements.txt
+$ py.test
+```
+
 ## `Phantom`:
 ### Supported native functions:
 * addCookie
